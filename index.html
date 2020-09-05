@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>letschat</title>
+	<script defer src="http:localhost:8000/socket.io/socket.io.js"></script>
+	<script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script defer type="text/javascript" src="script.js"></script><!-- inorder to connect the server and client -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<h1>
+	
+	
+
+
+<!-- entering username that is the sender from -->
+<p id="welcome"><span style="color: rgb(152,251,152);">Welcome To LetsChat</span></p>
+<div id="logo"></div>
+
+	<div id="display_control1">
+	<div class="enter_username">
+		<form id="login" onsubmit="return enterName();">
+			<input type="text" id="name" placeholder="Enter Unique userName"><hr id="line">
+			<p id="nickError"></p>
+			<button type="submit" id="btnn">Join</button>
+			
+		</form>
+	</div>
+
+	</div>
+
+<div id="display_control2">
+
+	<div id="userlist_side">
+		<span style="color: rgb(152,251,152)">Online</span>
+	<div id="users">
+		
+	</div>
+</div>
+<!-- ----------------------------------------- -->
+
+<!-- receiving the msgs  -->
+<div id="overallmessage_side">
+	<div id="the_sender"></div>
+	<div id="messages">
+	<div id="reciever"></div>
+	</div>
+<!--   -->
+
+<!-- send msg form -->
+<div class="mess_send">
+<form onsubmit="return sendMessage();">
+	<input id="message" placeholder="enter msg" style="text-align: center;color:white;">
+	<!-- <input id="btn" type="submit" name="send"> -->
+	<button type="submit" id="btn">
+		<i class="fa fa-paper-plane" aria-hidden="true"></i>
+	</button>
+</form>
+</div>
+</div>
+<!-- ------------ -->
+</div>
+
+</h1>
+</body>
+</html>

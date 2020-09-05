@@ -1,0 +1,256 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin:0px;
+}
+
+body{
+	background-image: url("leaves.jfif");
+	background-attachment: fixed;
+}
+#welcome{
+	position: absolute;
+	margin-left: 45%;
+	margin-top: -50px;
+	text-shadow: 1px 1px black;
+}
+#logo{
+	position: absolute;
+	margin-left:27%;
+	
+	margin-top: -70px;
+	text-shadow:4px 4px black;
+}
+#letschat{
+	font-size:100px;
+	position: absolute;
+	margin-bottom: -50px;
+}
+
+#messages{
+	height: 350px;
+	overflow: auto;
+
+}
+#messages::-webkit-scrollbar {
+  display: none;
+}
+#messages{
+	border:4px solid black;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	 border-radius: 15px;
+	text-align: center;
+	min-width:80%;
+	background-color: white;
+	height:500px;
+	margin-top:70px;
+	text-decoration-color: white;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+.join{
+	margin-top: 17px;
+	opacity: 1;
+	font-size: 15px;
+margin-right:20px; 
+text-align:center;
+padding:4px;
+clear: both;
+border-radius: 10px;
+width: 100%;
+color:white;
+font-style: italic;
+
+}
+
+#sent{
+	margin-top: 17px;
+	white-space: pre-line;
+	opacity: 1;
+float: right;
+margin-right:20px; 
+text-align:left;
+padding:4px;
+clear: both;
+border-radius: 10px;
+min-width: 250px;
+max-width: 500px;
+background:rgb(152,251,152);
+font-style: italic;
+font-size: 20px;
+}
+#recieved{
+	font-size: 20px;
+	margin-top: 17px;
+	white-space: pre-line;
+	opacity: 1;
+float: left;
+text-align:left;
+padding:4px;
+padding-left: 8px;
+margin-left: 30px;
+border-radius: 10px;
+clear: both;
+min-width: 250px;
+max-width: 500px;
+background:rgb(32,178,170);
+font-style: italic;
+}
+.mess_send{
+	position: relative;
+	margin-top:-10px;
+	margin-bottom:20px;
+	text-align: center;
+	background-color: rgb(0,0,0,0);
+
+}
+#message{
+	width:70%;
+	font-size: 20px;
+	border:1px solid black;
+	background-color: rgb(0,0,0,.5);
+	border-radius: 15px;
+}
+#message:focus{
+	padding:4px;
+	outline: none;
+}
+#btn{
+	font-size: 25px;
+	color:blue;
+	border:none;
+	background:transparent;
+
+	outline: none;
+}
+#btn:hover{
+	color:red;
+	transform: scale(1.5);
+}
+#login{
+	width: 500px;
+	position: relative;
+	margin-top: 12%;
+	margin-left: 30%;
+	text-align: center;
+	
+	border-radius: 25px;
+	min-height: 280px;
+	
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 2px 2px black;
+
+}
+#name{
+	
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	width: 80%;
+	margin-top: 30%;
+	text-decoration-style: line;
+	background:transparent;
+	outline-style: none;
+	border:none;
+
+}
+#line{
+	color: white;
+	
+	margin:auto;
+	width:90%;
+	height: 3px;
+
+}
+#btnn{
+	font-size: 25px;
+	font-weight: bold;
+	background-color: #e29c45;
+	width: 90%;
+	margin-top: 6%;
+}
+#entry{
+  width:60%;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius: 15px;
+  padding:4px;
+  height: 30px; 
+  outline: none;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration-color: white;
+}
+#entry:hover{
+	background-color: white;
+	outline: none;
+}
+.cont{
+	display: flex;
+}
+#heading{
+	position:absolute;
+	margin-top: 30px;
+	margin-left:45%;
+	color:white;
+	font-size: 40px;
+	font-weight: bold;
+}
+.logo{
+	margin-top: 25px;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#display_control2{
+	display: none;
+}
+#userlist_side{
+	width:30%;
+	float:left;
+	border:4px solid black;
+	position: relative;
+	margin-left:2%;
+	margin-right: 2%;
+	 border-radius: 15px;
+	text-align: center;
+	height:500px;
+	margin-top:70px;
+	text-decoration-color: white;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+#overallmessage_side{
+	width:60%;
+	float: left;
+}
+#usernamebtn{
+	width:100%;
+	background-color: #b58ced;
+	height: 36px;
+	font-size: 22px;
+	font-weight: bold;
+}
+#the_sender{
+	position:absolute;
+	margin-left: 25%;
+	margin-top: 1%;
+	color: white;
+	text-transform: uppercase;
+}
+#reciever{
+	color: rgb(32,178,170);
+}
+#usernamebtn:active{
+    background:#ff385e;
+}
+
+#usernamebtn:focus{
+    background:#ff385e;
+}
